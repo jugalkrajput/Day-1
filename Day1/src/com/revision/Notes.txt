@@ -1,0 +1,31 @@
+JVM, JDK, JRE Basics:
+=====================
+
+JVM (Java Virtual Machine): Runs compiled Java bytecode. Platform-dependent; provides memory management, garbage collection, security.
+JRE (Java Runtime Environment): Includes JVM + core libraries required to run Java programs. Does not include development tools.
+JDK (Java Development Kit): Includes JRE + development tools (compiler javac, debugger, etc.). Required to write and compile Java code.
+Relation: JDK → JRE → JVM (JDK contains JRE, which contains JVM).
+
+
+Variables and Data Types:
+=========================
+
+Primitive types (8): byte, short, int, long, float, double, char, boolean. Fixed-size, stored on stack.
+Reference types: Class objects, arrays, interfaces. Stored on heap; variable holds memory address.
+Variable declaration: <type> <name> [= value]; e.g., int count = 10;
+Scope: Local (method/block), instance (object), static (class).
+Default values: Primitives (0, 0.0, false), references (null); local variables must be initialized.
+
+
+Java Operators:
+===============
+
+Arithmetic: +, -, *, /, % (modulus)
+Assignment: =, +=, -=, etc.
+Comparison: ==, !=, >, <, >=, <=
+Logical: && (AND), || (OR), ! (NOT) – short-circuit
+Bitwise: &, |, ^ (XOR), ~, <<, >>, >>>
+Unary: +, -, ++, --, !
+Ternary: condition ? expr1 : expr2
+instanceof: checks object type
+Operator precedence: Unary > Arithmetic > Shift > Relational > Equality > Bitwise logical > Logical AND/OR > Ternary > Assignment.
